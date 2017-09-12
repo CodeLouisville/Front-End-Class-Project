@@ -145,3 +145,10 @@ Open the `louies-class` project folder in your editor.
   </body>
   </html>
   ```
+
+### Discussion/Reinforcement Points
+
+  1. Basics of file management
+  2. Naming conventions
+  3. Internet/webserver basics
+  4. HTML structure (doctype, html, head, body, footer)
