@@ -6,7 +6,7 @@ To view a mockup of what we are building please visit: https://xd.adobe.com/view
 
 
 Part 1
-=========
+-------
 
 ### Basic Site Structure and file management.
 
