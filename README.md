@@ -12,29 +12,29 @@ Part 1
 
 Organization is key to making your project easy for you to work on and others in the future.
 
-*Note: Please create all files and folders with lowercase letters, numbers, dashes, and underscores.*
+**Note:** *Please create all files and folders with lowercase letters, numbers, dashes, and underscores.*
 
 
 Let's start by creating a place on our systems for our projects to live.
 
-  1. Create a 'Projects' folder.
-  2. Inside that folder create a 'louies-class' folder.
+  1. Create a `Projects` folder.
+  2. Inside that folder create a `louies-class` folder.
 
 Now create folders for our assets to reside in.
 
-   1. Create a 'css' folder.
-   2. Create a 'img' folder.
-   3. Create a 'js' folder.
+   1. Create a `css` folder.
+   2. Create a `img` folder.
+   3. Create a `js` folder.
 
-Open the 'louies-class' project folder in your editor.
+Open the `louies-class` project folder in your editor.
 
-  1. In the 'css' folder create a file called "normalize.css" and paste the following code:
+  1. In the `css` folder create a file called `normalize.css` and paste the following code:
 
   ```
   /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
   ```
 
-  2. Create another file called 'style.css' in the css folder and paste in this code:
+  2. Create another file called `style.css` in the css folder and paste in this code:
 
   ```
   @import url("normalize.css");
@@ -53,16 +53,14 @@ Open the 'louies-class' project folder in your editor.
       margin: 0;
       padding: 0;
   }
-
-
   ```
 
-  3. Go back to the root folder and create a new file called 'app.js' - leave it blank for now.
-  4. Download the 'louies-images.zip' file and (extract) put all the images in the 'img' folder.
+  3. Go back to the root folder and create a new file called `app.js` - leave it blank for now.
+  4. Download the `louies-images.zip` file and (extract) put all the images in the `img` folder.
 
   Now that our assets are in place. Now let's create our first page!
 
-    1. Create an 'index.html' file in the root (base) of the 'louies-class' folder.
+    1. Create an `index.html` file in the root (base) of the `louies-class` folder.
     2. Copy and paste the default HTMl structure following:
 
   ```
