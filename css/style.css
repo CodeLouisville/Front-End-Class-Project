@@ -1,19 +1,11 @@
-/****** Colors
-
-Tan: #D9CC9F
-
-Red: #DE341F
-
-Dark Blue: #1E1E20
-
-Light Blue: #202C36
-
-Green: #6EAE45
-
-******/
-
+@import url("normalize.css");
 
 /****** Base ******/
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
@@ -22,9 +14,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border-top:  10px solid #DE341F;
 
+    border-top:  10px solid #DE341F;
     background-image: url(../img/hero-bg-pizza2.jpg);
     background-color: #1E1E20;
     background-repeat: repeat;
@@ -33,9 +24,7 @@ body {
     background-attachment: fixed;
 }
 
-* {
-  box-sizing: border-box;
-}
+/****** Typography ******/
 
 h1 {
   font-size: 2.5rem;
