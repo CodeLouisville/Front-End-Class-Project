@@ -55,7 +55,7 @@ Open the `louies-class` project folder in your editor.
   }
   ```
 
-  3. Go back to the root folder and create a new file called `app.js` - leave it blank for now.
+  3. Go back to the root folder, then go to the `js` folder and create a new file called `app.js` - leave it blank for now.
   4. **[Download](https://www.dropbox.com/s/128poel61h1qt38/louies-images.zip?dl=0)** the `louies-images.zip` file and put(extract) all the images in the `img` folder.
 
   Now that our assets are in place. Now let's create our first page!
