@@ -12,7 +12,7 @@ Part 2
 
 Let's get the layout and grid started!
 
-1. Copy & Paste the css block below into your style.css file.
+1. This first block is the responsive grid for mobile. Let's copy & paste the css block below into your style.css file.
 
 ```
 
@@ -55,7 +55,57 @@ Let's get the layout and grid started!
 }
 
 ```
+2. Let's add the desktop media queries next.
 
+3. Let's create a new CSS file called ```mediaqueries.css``` in the css folder.
+
+4. 
+
+```
+/*****Media Queries******/
+
+
+@media(min-width: 992px) {
+
+/*****Layout******/
+
+  .col {
+  	display: block;
+  	float:left;
+  	margin: 1% 0 1% 1.6%;
+  }
+  .col:first-child {
+    margin-left: 0;
+  }
+  .span_1_of_2 {
+    width: 49.2%;
+  }
+  .span_2_of_2 {
+    width: 100%;
+  }
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 66.13%;
+  }
+  .span_1_of_3 {
+    width: 32.26%;
+  }
+  .span_4_of_4 {
+	width: 100%;
+  }
+  .span_3_of_4 {
+  	width: 74.6%;
+  }
+  .span_2_of_4 {
+  	width: 49.2%;
+  }
+  .span_1_of_4 {
+  	width: 23.8%;
+  }
+ }
+```
 
 ### Discussion/Reinforcement Points
 
