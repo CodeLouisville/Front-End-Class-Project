@@ -1,4 +1,6 @@
 @import url("normalize.css");
+@import url("animations.css");
+
 
 /****** Base ******/
 
@@ -48,12 +50,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1rem;
-    line-height: 1;
-    text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 1rem 0 2rem;
 }
 
 p {
@@ -64,14 +66,14 @@ p {
 }
 
 a:link, a:visited {
-    color: #6EAE45;
-    text-decoration: none;
-    transition: all 0.2s linear;
+  color: #6EAE45;
+  text-decoration: none;
+  transition: all 0.2s linear;
 }
 
 a:link, a:visited {
-    color: #6EAE45;
-    text-decoration: underline;
+  color: #6EAE45;
+  text-decoration: underline;
 }
 
 strong {
@@ -143,15 +145,22 @@ button {
 	margin: 0px;
 }
 
-.col {  margin: 1% 0 1% 0%; }
+.col {
+  margin: 1% 0 1% 0%;
+}
 
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
+.group:before, .group:after {
+  content:""; display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  zoom:1; /* For IE 6/7 */
+}
 
 .wrap {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 /****** Header ******/
@@ -241,6 +250,7 @@ a.hero-cont-button:hover {
   background-color: #DE341F;
 }
 
+
 /****** Welcome ******/
 
 .welcome {
@@ -309,7 +319,7 @@ a.hero-cont-button:hover {
 }
 
 .about-cont img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .about-cont figure {
@@ -329,6 +339,7 @@ a.hero-cont-button:hover {
   line-height: 1.6;
   margin: 1rem 0 0;
 }
+
 
 /****** Join ******/
 
@@ -368,7 +379,7 @@ a.hero-cont-button:hover {
   background-color:white;
   position:relative;
   width:100%;
-  padding: 1rem;
+  padding: 0;
   border-radius: 12px;
 }
 
@@ -378,26 +389,72 @@ a.hero-cont-button:hover {
   width: 100%;
   font-size: 1rem;
   margin: 0;
-  padding: 0;
-  height: auto;
+  padding: 1rem;
+  height: 60px;
 }
 
-.search_button {
-  position:absolute;
+input[type="button"].search_button {
+  position: absolute;
   display: inline;
   border: 0px solid black;
   text-align: center;
-  top:0;
-  right:0;
-  width:140px;
+  top: 0;
+  right: 0;
+  width: 140px;
   background-color: #202C36;
   padding: 1rem;
   border-radius: 0 12px 12px 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
+  height: 60px;
+  margin: 0;
+  color: #FFFFFF;
 }
 
+input[type="button"].search_button:hover, input[type="button"].search_button:active, input[type="button"].search_button:focus {
+  background: #DE341F;
+}
+
+.search_button:disabled {
+  opacity: .5;
+  background: #CCCCCC;
+  color: #DDDDDD;
+}
+
+.validation-message {
+  display: none;
+}
+
+.validation-message {
+  background: RGBA(224, 50, 15,0.5);
+  color: #333333;
+  font-weight: bold;
+  padding: 1rem;
+  border: 2px solid #DE341F;
+  border-radius: 12px;
+}
+
+
+
+/****** Keep for now.
+
+.nwsltr-btn:disabled {
+  opacity: .5;
+}
+
+.nwsltr-btn:hover {
+  background-color: #800080;
+}
+
+.validation-message {
+  color: #ff0000;
+  display: none;
+  margin: .5rem 0;
+  font-size: 0.8rem;
+}
+
+****/
 
 /****** Menu ******/
 
@@ -483,7 +540,7 @@ a.hero-cont-button:hover {
 }
 
 .owl-item {
-    list-style: none;
+  list-style: none;
 }
 
 .owl-prev, .owl-next, .owl-dots {
@@ -619,248 +676,6 @@ footer a:link, footer a:visited  {
   font-size: 0.8rem;
   text-align: center;
 }
-
-
-/****** Keep for now.
-
-.nwsltr-btn:disabled {
-  opacity: .5;
-}
-
-.nwsltr-btn:hover {
-  background-color: #800080;
-}
-
-.validation-message {
-  color: #ff0000;
-  display: none;
-  margin: .5rem 0;
-  font-size: 0.8rem;
-}
-
-****/
-
-
-/***** Animations ******/
-
-.animate-block {
-  -webkit-animation-delay: .4s;
-        animation-delay: .4s;
--webkit-animation-duration: 1s;
-        animation-duration: 1s;
--webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-/*display: block;*/
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.fade-in, .banner-lead,
-.banner-inner, .banner-content, .banner-buttons, .services-block.active .content-block-inner, .services-block.active .service-item, .video-feature-block .content-block-inner.active p, .news-block.active .content-block-inner {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn; }
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-down, .about-block .content-block-inner.active {
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown; }
-
-@-webkit-keyframes fadeInDownBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInDownBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-down-big, .contact-feature-block.active .feature-block-heading, .video-feature-block .content-block-inner.active .feature-block-heading, .video-feature-block .content-block-inner.active .button-play {
-  -webkit-animation-name: fadeInDownBig;
-          animation-name: fadeInDownBig; }
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-30px, 0, 0);
-            transform: translate3d(-30px, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-30px, 0, 0);
-            transform: translate3d(-30px, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-left, .about-content.active .what-we-do-block, .news-list.active .news-item, .contact-block.active .contact-block-form {
-  -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft; }
-
-@-webkit-keyframes fadeInLeftBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInLeftBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-left-big {
-  -webkit-animation-name: fadeInLeftBig;
-          animation-name: fadeInLeftBig; }
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(30px, 0, 0);
-            transform: translate3d(30px, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(30px, 0, 0);
-            transform: translate3d(30px, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-right, .about-content.active .our-clients-block, .news-list.active .news-item-secondary, .contact-block.active .contact-block-content, .partner-sect-quote {
-  -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight; }
-
-@-webkit-keyframes fadeInRightBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInRightBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-right-big {
-  -webkit-animation-name: fadeInRightBig;
-          animation-name: fadeInRightBig; }
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 30px, 0);
-            transform: translate3d(0, 30px, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 30px, 0);
-            transform: translate3d(0, 30px, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-up, .modal:target .modal-inner, .our-team-block.active, .news-list.active .news-item-third, .hp-news-box, .partner-sect-photo {
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp; }
-
-@-webkit-keyframes fadeInUpBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInUpBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-.fade-in-up-big, .contact-feature-block.active .button {
-  -webkit-animation-name: fadeInUpBig;
-          animation-name: fadeInUpBig; }
 
 
 /*****Media Queries******/
