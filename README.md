@@ -57,15 +57,15 @@ Let's get the layout and grid started!
 ```
 2. Let's add the desktop media queries next.
 
-3. Let's create a new CSS file called ```mediaqueries.css``` in the css folder.
+3. Create a new CSS file called ```mediaqueries.css``` in the css folder.
 
-4. 
+4. Next copy & paste the following block into ```mediaqueries.css```.
 
 ```
 /*****Media Queries******/
 
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
 
 /*****Layout******/
 
@@ -104,9 +104,14 @@ Let's get the layout and grid started!
   .span_1_of_4 {
   	width: 23.8%;
   }
+  
  }
+ 
 ```
+
+
+
 
 ### Discussion/Reinforcement Points
 
-  1. Basics of file management
+  1. ???
